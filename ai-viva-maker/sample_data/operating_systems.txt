@@ -1,0 +1,20 @@
+Operating Systems - Process Management
+
+A process is a program in execution. It is the unit of work in a modern operating system. A process includes the program code, current activity, and resources.
+
+Process State:
+1. New: The process is being created.
+2. Ready: The process is waiting to be assigned to a processor.
+3. Running: Instructions are being executed.
+4. Waiting: The process is waiting for some event to occur (such as I/O completion).
+5. Terminated: The process has finished execution.
+
+CPU Scheduling:
+The goal of CPU scheduling is to maximize CPU utilization. Algorithms include:
+- First-Come, First-Served (FCFS): Simplest algorithm, executes processes in order of arrival.
+- Shortest Job First (SJF): Chooses the process with the smallest execution time.
+- Round Robin (RR): Each process gets a small unit of CPU time (time quantum), then is preempted.
+- Priority Scheduling: CPU is allocated to the process with the highest priority.
+
+Threads:
+A thread is a lightweight process. A process can have multiple threads. Threads within the same process share the same code section, data section, and OS resources, but have their own stack and registers.
